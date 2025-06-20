@@ -19,6 +19,6 @@ var dbDestination = new ClickHouseDbDestination<YourDbEntity>(clickHouseConnecti
 {
       BatchSize = 10000
 };
-// your_source.LinkTo(combineBrandLookupTrans);
+// your_source.LinkTo(dbDestination);
 await Network.ExecuteAsync(cancellationToken, dbDestination);
 ```
