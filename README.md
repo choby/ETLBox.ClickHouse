@@ -15,7 +15,7 @@ dotnet package add ETLBox.ClickHouse
 ```c#
 var clickHouseConnectionString = ""; //your clickhouse connection string 
 var clickHouseConnectionManager = new ClickHouseConnectionManager(clickHouseConnectionString);
-var dbDestination = new ClickHouseDbDestination<YourDbEntity>(clickHouseConnectionManager, "your_table_name")
+var dbDestination = new DbDestination<YourDbEntity>(clickHouseConnectionManager, "your_table_name")
 {
       BatchSize = 10000
 };
