@@ -4,6 +4,8 @@
 
 ### This project uses Octonica.ClickHouseClient as the database driver, enabling ETLBox to perform batch writes to ClickHouse.
 
+> ⚠️⚠️⚠️ This project relies on <a href="https://www.etlbox.net/">ETLBox</a> and only adds the ability to write data to Clickhouse. It does not license ETLBox commercially
+
 ----
 - add package
 ```shell
