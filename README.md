@@ -1,24 +1,60 @@
-# ETLBox.ClickHouse <a href="https://www.nuget.org/packages/ETLBox.ClickHouse/"><img src="http://img.shields.io/nuget/v/ETLBox.ClickHouse.svg?style=flat-square" alt="NuGet version" height="18"></a>
+# ETLBox.ClickHouse <a href=https://www.nuget.org/packages/ETLBox.ClickHouse/><img src=http://img.shields.io/nuget/v/ETLBox.ClickHouse.svg?style=flat-square alt=NuGet version height=18></a>
 
 ----
 
 ### This project uses Octonica.ClickHouseClient as the database driver, enabling ETLBox to perform batch writes to ClickHouse.
 
-> ⚠️⚠️⚠️ This project relies on <a href="https://www.etlbox.net/">ETLBox</a> and only adds the ability to write data to Clickhouse. It does not license ETLBox commercially
+> ⚠️⚠️⚠️ This project relies on <a href=https://www.etlbox.net/>ETLBox</a> and only adds the ability to write data to Clickhouse. It does not license ETLBox commercially
 
 ----
-- add package
+- Add package
 ```shell
 dotnet package add ETLBox.ClickHouse
 ```
-- example
+- Example
 ```c#
-var clickHouseConnectionString = ""; //your clickhouse connection string 
+var clickHouseConnectionString = ; //your clickhouse connection string 
 var clickHouseConnectionManager = new ClickHouseConnectionManager(clickHouseConnectionString);
-var dbDestination = new DbDestination<YourDbEntity>(clickHouseConnectionManager, "your_table_name")
+var dbDestination = new DbDestination<YourDbEntity>(clickHouseConnectionManager, your_table_name)
 {
       BatchSize = 10000
 };
 // your_source.LinkTo(dbDestination);
 await Network.ExecuteAsync(cancellationToken, dbDestination);
+```
+
+- Data type map, Database entities are defined according to the following relationships,clickhouse field type => clr type
+```
+                bit => System.Boolean
+                boolean => System.Boolean
+                tinyint => System.UInt16
+                smallint => System.Int16
+                int2 => System.Int16
+                int => System.Int32
+                int4 => System.Int32
+                int8 => System.Int32
+                integer => System.Int32
+                bigint => System.Int64
+                decimal => System.Decimal
+                number => System.Decimal
+                money => System.Decimal
+                smallmoney => System.Decimal
+                numeric => System.Decimal
+                real => System.Double
+                float => System.Double
+                float4 => System.Double
+                float8 => System.Double
+                double => System.Double
+                double precision => System.Double
+                date => System.DateTime
+                datetime => System.DateTime
+                smalldatetime => System.DateTime
+                datetime2 => System.DateTime
+                time => System.DateTime
+                timetz => System.DateTime
+                timestamp => System.DateTime
+                timestamptz => System.DateTime
+                uniqueidentifier => System.Guid
+                uuid => System.Guid
+                other => System.String
 ```
