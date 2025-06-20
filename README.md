@@ -1,6 +1,10 @@
 ### This project uses Octonica.ClickHouseClient as the database driver, enabling ETLBox to perform batch writes to ClickHouse.
 
 ----
+- add package
+```shell
+dotnet package add ETLBox.ClickHouse
+```
 - example
 ```c#
 var clickHouseConnectionString = ""; //your clickhouse connection string 
