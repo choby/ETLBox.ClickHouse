@@ -1,0 +1,12 @@
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/bin/Release/net9.0/ETLBox.ClickHouse.deps.json
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/bin/Release/net9.0/ETLBox.ClickHouse.dll
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/bin/Release/net9.0/ETLBox.ClickHouse.pdb
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ETLBox.ClickHouse.csproj.AssemblyReference.cache
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ETLBox.ClickHouse.GeneratedMSBuildEditorConfig.editorconfig
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ETLBox.ClickHouse.AssemblyInfoInputs.cache
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ETLBox.ClickHouse.AssemblyInfo.cs
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ETLBox.ClickHouse.csproj.CoreCompileInputs.cache
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ETLBox.ClickHouse.dll
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/refint/ETLBox.ClickHouse.dll
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ETLBox.ClickHouse.pdb
+/Users/choby/Documents/github/ETLBox.ClickHouse/ETLBox.ClickHouse/obj/Release/net9.0/ref/ETLBox.ClickHouse.dll
