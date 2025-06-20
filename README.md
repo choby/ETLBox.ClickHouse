@@ -25,37 +25,37 @@ await Network.ExecuteAsync(cancellationToken, dbDestination);
 
 - Data type map, Database entities are defined according to the following relationships
 
-  | clickhouse field type | clr type |
-  |--------|--------|
-  | bit  | System.Boolean  |
-  | boolean  | System.Boolean  |
-  |  tinyint | System.UInt16  |
-  | smallint  | System.Int16  |
-  | int2  |  System.Int16 |
-  | int  | System.Int32  |
-  |  int4 | System.Int32  |
-  | int8  | System.Int32  |
-  | integer  |  System.Int32 |
-  | bigint  | System.Int64  |
-  | decimal  | System.Decimal  |
-  |  number | System.Decimal  |
-  | money  | System.Decimal  |
-  |  smallmoney | System.Decimal  |
-  | numeric  | System.Decimal  |
-  | real  |  System.Double |
-  |  float | System.Double  |
-  | float4  | System.Double |
-  | float8  | System.Double  |
-  | double  | System.Double  |
-  | double precision  | System.Double  |
-  | date  | System.DateTime  |
-  |  datetime |  System.DateTime |
-  | smalldatetime  | System.DateTime  |
-  |  datetime2 | System.DateTime  |
-  | time  | System.DateTime  |
-  | timetz  | System.DateTime  |
-  | timestamp  | System.DateTime  |
-  |  timestamptz |  System.DateTime |
-  |  uniqueidentifier | System.Guid  |
-  | uuid  | System.Guid  |
+  | clickhouse field type | clr type                                   |
+  |--------|--------------------------------------------|
+  | bit  | System.Boolean                             |
+  | boolean  | System.Boolean                             |
+  |  tinyint | System.UInt16                              |
+  | smallint  | System.Int16                               |
+  | int2  | System.Int16                               |
+  | int  | System.Int32                               |
+  |  int4 | System.Int32                               |
+  | int8  | System.Int32                               |
+  | integer  | System.Int32                               |
+  | bigint  | System.Int64                               |
+  | decimal  | System.Decimal                             |
+  |  number | System.Decimal                             |
+  | money  | System.Decimal                             |
+  |  smallmoney | System.Decimal                             |
+  | numeric  | System.Decimal                             |
+  | real  | System.Double                              |
+  |  float | System.Double                              |
+  | float4  | System.Double                              |
+  | float8  | System.Double                              |
+  | double  | System.Double                              |
+  | double precision  | System.Double                              |
+  | date  | System.DateTime  <br/>     System.DateOnly |
+  |  datetime | System.DateTime<br/>System.DateTimeOffset  |
+  | smalldatetime  | System.DateTime                            |
+  |  datetime2 | System.DateTime                            |
+  | time  | System.DateTime                            |
+  | timetz  | System.DateTime                            |
+  | timestamp  | System.DateTime                            |
+  |  timestamptz | System.DateTime                            |
+  |  uniqueidentifier | System.Guid                                |
+  | uuid  | System.Guid                                |
 
