@@ -1,4 +1,4 @@
-# ETLBox.ClickHouse
+# ETLBox.ClickHouse <a href="https://www.nuget.org/packages/ETLBox.ClickHouse/"><img src="http://img.shields.io/nuget/v/ETLBox.ClickHouse.svg?style=flat-square" alt="NuGet version" height="18"></a>
 
 ----
 
