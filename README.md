@@ -7,11 +7,18 @@
 > ⚠️⚠️⚠️ This project relies on <a href=https://www.etlbox.net/>ETLBox</a> and only adds the ability to write data to Clickhouse. It does not license ETLBox commercially
 
 ----
-- Add package
+### Pre-requirements
+
+* [ETLBox 3.7.0+](https://www.etlbox.net/)
+* [Octonica.ClickHouseClient](https://github.com/Octonica/ClickHouseClient)
+* [.Net6.0+ SDK](https://dotnet.microsoft.com/download/dotnet)
+
+
+### Add package
 ```shell
 dotnet package add ETLBox.ClickHouse
 ```
-- Example
+### Example
 ```c#
 var clickHouseConnectionString = ; //your clickhouse connection string 
 var clickHouseConnectionManager = new ClickHouseConnectionManager(clickHouseConnectionString);
@@ -23,7 +30,7 @@ var dbDestination = new DbDestination<YourDbEntity>(clickHouseConnectionManager,
 await Network.ExecuteAsync(cancellationToken, dbDestination);
 ```
 
-- Data type map, Database entities are defined according to the following relationships
+### Data type map, Database entities are defined according to the following relationships
 
   | clickhouse field type | clr type                                   |
   |--------|--------------------------------------------|
@@ -59,3 +66,9 @@ await Network.ExecuteAsync(cancellationToken, dbDestination);
   |  uniqueidentifier | System.Guid                                |
   | uuid  | System.Guid                                |
 
+### Additional resources
+
+You can see the following resources to learn more about ETLBox and Octonica.ClickHouseClient:
+
+* [ETLBox Connection Manager Turoaial](https://www.etlbox.net/docs/relational-databases/connection-manager/)
+* [Octonica.ClickHouseClient bulk insert Tutorial](https://github.com/Octonica/ClickHouseClient?tab=readme-ov-file#bulk-insert)
