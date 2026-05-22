@@ -5,7 +5,7 @@
  Please note: An official ClickHouse connector has been developed and released by the ETLBox team. As a result, this community repository is **no longer maintained or updated**.  
  To ensure you have the full feature set, commercial support, and the latest security updates, please migrate to the official package:  
  -	**Official NuGet Package**: ETLBox.ClickHouse
- -	**Official Website & Documentation**: 👉 [Click here to visit ETLBox.net](https://www.etlbox.net/docs/streaming-connectors/overview/)
+ -	**Official Website & Documentation**: 👉 [Click here to visit ETLBox.net](https://www.etlbox.net/docs/relational-databases/overview/)
 
 
 ---
