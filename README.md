@@ -1,6 +1,14 @@
 # ETLBox.ClickHouse <a href="https://www.nuget.org/packages/ETLBox.ClickHouse"><img src="http://img.shields.io/nuget/v/ETLBox.ClickHouse.svg?style=flat-square" alt=NuGet version height=18></a>
 
 ----
+ ## 📢 Project Notice & Migration Guide  
+ Please note: An official ClickHouse connector has been developed and released by the ETLBox team. As a result, this community repository is **no longer maintained or updated**.  
+ To ensure you have the full feature set, commercial support, and the latest security updates, please migrate to the official package:  
+ -	**Official NuGet Package**: ETLBox.ClickHouse
+ -	**Official Website & Documentation**: 👉 [Click here to visit ETLBox.net](https://www.etlbox.net/docs/streaming-connectors/overview/)
+
+
+---
 
 ### This project uses Octonica.ClickHouseClient as the database driver, enabling ETLBox to perform batch writes to ClickHouse.
 
